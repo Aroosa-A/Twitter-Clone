@@ -1,0 +1,20 @@
+[
+    {
+        "firstName": "Mock",
+        "secondNAme": "Holliday",
+        "userName": "mock",
+        "postBody": "Hi! its my first post"
+    },
+    {
+        "firstName": "Adam",
+        "secondName": "Carter",
+        "userName": "adam",
+        "postBody": "Hello from peeps"
+    },
+    {
+        "firstName": "Leanne",
+        "secondName": "Brier",
+        "userName": "lea",
+        "postBody": "whats going on"
+    }
+]

@@ -1,0 +1,65 @@
+.signUp {
+    border-style: solid;
+    border-color: #282c34;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+}
+
+.signUp h2 {
+    margin-left: 39%;
+}
+
+.line {
+    border-style: solid;
+    border-color: #282c34;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#signUpForm {
+    margin-top: 45px;
+    margin-left: 13%;
+}
+
+.signUpData {
+    color: #282c34;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 85%;
+    margin-top: 15px;
+}
+
+#sigUpLabel {
+    margin-bottom: 5px;
+}
+
+input {
+    background-color: #282c34;
+    color: white;
+    border-radius: 2px;
+    height: 35px;
+}
+
+.signButton {
+    margin-top: 25px;
+    height: 50px;
+    width: 85%;
+    background-color: #282c34;
+    border-radius: 5px;
+    color: white;
+    font-size: large;
+}
+
+#signMessage {
+    margin-top: 10px;
+    font-size: large;
+    font-weight: bold;
+    color: crimson;
+}

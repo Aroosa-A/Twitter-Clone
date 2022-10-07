@@ -1,0 +1,28 @@
+.header {
+    background-color: #282c34;
+    color: white;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+#app-name {
+    padding-top: 22px;
+    margin-left: 17%;
+    font-size: xx-large;
+    width: 50%;
+}
+
+.navbar {
+    width: 50%;
+    padding-top: 35px;
+}
+
+.nav-home,
+.signUp-link,
+.login-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 5%;
+    font-size: large;
+}

@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(186, 209, 209);
+}
+
+* {
+    font-family: sans-serif;
+}
+
+.home {
+    border-style: solid;
+    border-color: #282c34;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 33%;
+    border-radius: 2px;
+}
+
+#peepBox {
+    background-color: rgb(180, 200, 200);
+    border-radius: 2px;
+    width: 80%;
+}
+
+.noNameBox {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.nameBox {
+    margin-left: 27%;
+    margin-right: 20%;
+}
+
+.box {
+    border-style: solid;
+    border-color: #282c34;
+    padding-left: 15%;
+    padding-right: 5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 2px;
+}
+
+.middleLine {
+    border-style: dashed;
+    border-color: #282c34;
+    margin-right: 15%;
+}

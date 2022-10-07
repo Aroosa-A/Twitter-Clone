@@ -1,0 +1,23 @@
+[
+    {
+        "firstName": "Mock",
+        "secondNAme": "Holliday",
+        "email": "mock.holliday@example.com",
+        "userName": "mock",
+        "password": "12345"
+    },
+    {
+        "firstName": "Adam",
+        "secondName": "Carter",
+        "email": "adam.carter@unilogic.com",
+        "userName": "adam",
+        "password": "98765"
+    },
+    {
+        "firstName": "Leanne",
+        "secondName": "Brier",
+        "email": "leanne.brier@connic.org",
+        "userName": "lea",
+        "password": "56743"
+    }
+]

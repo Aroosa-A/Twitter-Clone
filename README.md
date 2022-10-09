@@ -17,6 +17,7 @@ Build With:
 **Languages**
 - JavaScript
 - CSS
+- HTML
 
 **DataBase**
 - NoSql
@@ -43,15 +44,15 @@ Steps to follow in order to run this project locally on your machine
     ```
     npm install
     ```
-3. Run servers
+3. Connect with MongoDB
+    ```
+    mongodb://localhost:27017
+    ```
+4. Run servers
 
     Open **Package.json** files from both *FRONTEND* and *BACKEND* folders and apply command
     ```
     npm start
-    ```
-4. Connect with MongoDB
-    ```
-    mongodb://localhost:27017
     ```
 
 5. Test

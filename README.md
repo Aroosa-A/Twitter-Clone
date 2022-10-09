@@ -3,6 +3,7 @@ Chitter Challenge
 
 About the Project:
 -------
+![project picture](/image/chitter.png)
 - This is a Full Stack Project, final challenge of Digital Futures Academy.
 - This project is a Twitter clone for DF academy trainees so they can post and see each others posts by logging in.
 

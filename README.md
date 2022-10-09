@@ -38,7 +38,7 @@ Steps to follow in order to run this project locally on your machine
 
 1. Clone the repo
 
-    You can copy project link from *green* button,should be like this
+    You can copy project link from *green* button named as **Code**, link should be like this
     ```
     git clone http://github.com/your-username/Project-name.git
     ```

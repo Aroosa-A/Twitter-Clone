@@ -16,6 +16,7 @@ Build With:
 **Languages**
 - JavaScript
 - CSS
+- HTML
 
 **DataBase**
 - NoSql

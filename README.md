@@ -46,7 +46,7 @@ Steps to follow in order to run this project locally on your machine
     ```
 3. Connect with MongoDB
     ```
-    mongodb://localhost:27017
+    mongodb://localhost:27017/your-database-name
     ```
 4. Run servers
 

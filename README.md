@@ -37,10 +37,14 @@ Getting Started:
 Steps to follow in order to run this project locally on your machine
 
 1. Clone the repo
+
+    You can copy project link from *green* button,should be like this
     ```
     git clone http://github.com/your-username/Project-name.git
     ```
-2. Install dependencies by writing this command in terminal or by right clicking on **Package.json** file and selecting *Install dependencies* of both folders
+2. Install dependencies
+
+    You can install them by writing this command in terminal or by right clicking on **Package.json** file and selecting *Install dependencies* of both folders
     ```
     npm install
     ```

@@ -61,7 +61,7 @@ Steps to follow in order to run this project locally on your machine
 
 5. Test
 
-    You can run tests of both folders by opening **Package.json** file and running this command in terminal
+    You can run tests of both folders by opening integrated terminal from **Package.json** file and running this command in terminal
     ```
     npm test
     ```

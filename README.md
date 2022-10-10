@@ -54,7 +54,7 @@ Steps to follow in order to run this project locally on your machine
     ```
 4. Run servers
 
-    Open **Package.json** files from both *FRONTEND* and *BACKEND* folders and apply command
+    Open integrated terminal from **Package.json** files from both *FRONTEND* and *BACKEND* folders and apply command
     ```
     npm start
     ```

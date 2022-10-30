@@ -31,7 +31,7 @@ describe('Tests for Home component', () => {
             postDate: "2022-08-15T01:10:54.510Z"
         }];
         render(<MemoryRouter><Home post={object} /></MemoryRouter>);
-        const date = screen.getByText(/at 2:10 AM/);
+        const date = screen.getByText('08/15/2022');
         expect(date).toBeInTheDocument();
     });
 });

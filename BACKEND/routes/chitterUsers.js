@@ -1,7 +1,9 @@
 import express from 'express';
 const router = express.Router();
-import ChitterUser from '../models/chitterUsersSchema.js';
-import { check, validationResult } from 'express-validator';
+
+import { check } from 'express-validator';
+import { register } from '../controllers/chitterUsersController.js';
+import { verifyToken } from '../middleware/auth.js';
 
 
 router.use(express.json());
@@ -14,47 +16,8 @@ router.route('/')
         check('userName').exists().isLength({ min: 2 }),
         check('password').exists().isLength({ min: 5 })
     ],
-        (req, res) => {
-
-            const { email, userName } = req.body;
-            const errors = validationResult(req);
-            if (!errors.isEmpty()) {
-                res.send({ message: `There were errors in the sign up data` });
-            }
-            else {
-                ChitterUser.findOne({}, (err, chitters) => {
-                    if (chitters === null) {
-                        const chitterUser = new ChitterUser(req.body);
-                        chitterUser.save(err => {
-                            if (err) {
-                                res.send(err);
-                            }
-                            else {
-                                res.send({ message: 'Registered Successfully! please login to continue', chitterUser });
-                            }
-                        });
-                    }
-                    else {
-                        ChitterUser.findOne({ $or: [{ email }, { userName }] }, (err, chitterUser) => {
-                            if (chitterUser === null) {
-                                const chitterUser = new ChitterUser(req.body);
-                                chitterUser.save(err => {
-                                    if (err) {
-                                        res.send(err);
-                                    }
-                                    else {
-                                        res.send({ message: 'Registered Successfully! please login to continue', chitterUser });
-                                    }
-                                });
-                            }
-                            else {
-                                res.send({ message: `User already exists` });
-                            }
-                        });
-                    }
-                });
-            }
-        });
+        register
+    );
 
 
 

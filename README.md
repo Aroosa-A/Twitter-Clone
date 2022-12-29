@@ -31,6 +31,8 @@ Build With:
 - Mongoose
 - Axios
 - React Router Dom
+- bcrypt
+- jwt
 
 Getting Started:
 -------
@@ -113,7 +115,6 @@ Persistance Layer=> setup mongoDB for both above layers to get data and store
 
 ```
 
-
 ```
 As a trainee
 So that I can see what others are saying  
@@ -123,7 +124,6 @@ Presentation layer=> need a UI for displaying all posts
 Business layer=> need to get data from database and pass data in a way that latest post is on top of page
 Persistance layer=> need get req to get data from mongoDB and give it to business layer which will eventually pass it to presentation layer to display it
 ```
-
 
 ```
 As a trainee
@@ -163,12 +163,25 @@ I want to log out of Chitter
 presentation layer=> show a button in header which is connected to login page and also change state login to log out when clicked
 ```
 
+### Updated Version
+```
+As a trainee
+So I can trust App about my credentials
+I wan't more secure App in terms of using features, and sign-up and log-in process.
+
+Business Layer=> added a new folder *controllers* where imported *bcrypt* package to make hashed code while user sign up and then 
+added user login matched that encrypted password using bcrypt package to make process more secure.
+added new folder *middleWare* where created authentication for right person to use features of app by using *jwt* package.
+added new folder *config* where secret key is stored to use for generating jwt token.
+```
+
 Project Review:
 --------------
 
-### Main takeaways
+### Main Takeaways
 
 - Learned how to connect frontend with backend and also how to use Database
 - I really enjoyed this Project because this was first full stack project i worked on
 - I would like to use Bootstrap if i work on it again
 - Also would like to add more functionalities for example option to mention other person in post, sending the notification through emails or replying back to other people posts.
+- learned about jwt authentication and was able to implement it in this project in updated version of project

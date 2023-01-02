@@ -177,6 +177,16 @@ Presentation Layer=> stored token in localStorage and get it back in token varia
 send it with post request so that only verified user can make posts.
 ```
 
+```
+As a user
+So that I know data is loading
+I wan't to see some loading animation.
+
+Presentation Layer=> added material ui react package in front end to add backDrop for animation.
+```
+
+
+
 Project Review:
 --------------
 

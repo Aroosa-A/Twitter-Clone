@@ -1,4 +1,4 @@
-Chitter Challenge
+Chitter Chat
 =================
 
 About the Project:
@@ -173,6 +173,8 @@ Business Layer=> added a new folder *controllers* where imported *bcrypt* packag
 added user login matched that encrypted password using bcrypt package to make process more secure.
 added new folder *middleWare* where created authentication for right person to use features of app by using *jwt* package.
 added new folder *config* where secret key is stored to use for generating jwt token.
+Presentation Layer=> stored token in localStorage and get it back in token variable in MakePost component to
+send it with post request so that only verified user can make posts.
 ```
 
 Project Review:
@@ -184,4 +186,4 @@ Project Review:
 - I really enjoyed this Project because this was first full stack project i worked on
 - I would like to use Bootstrap if i work on it again
 - Also would like to add more functionalities for example option to mention other person in post, sending the notification through emails or replying back to other people posts.
-- learned about jwt authentication and was able to implement it in this project in updated version of project
+- Learned about jwt authentication and was able to implement it in this project in updated version of project.

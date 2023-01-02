@@ -30,6 +30,7 @@ const Login = ({ currentUser, setCurrentUser, logIn, logInHandler }) => {
         const { email, password } = user;
         if (email && password) {
             const res = await axios.post('http://localhost:4000/currentUser', user);
+            localStorage.setItem("token", res.data.token);
             setCurrentUser(res.data.currentUser);
             setMessage(res.data.message);
             setUser({ email: '', password: '' });

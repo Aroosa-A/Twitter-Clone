@@ -3,6 +3,7 @@ const router = express.Router();
 import { check } from 'express-validator';
 import { makePosts } from '../controllers/chitterPostsController.js';
 import { verifyToken } from '../middleware/auth.js';
+import ChitterPost from '../models/chitterPostsSchema.js';
 
 
 router.use(express.json());

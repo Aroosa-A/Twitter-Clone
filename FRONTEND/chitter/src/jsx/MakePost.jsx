@@ -28,9 +28,15 @@ const MakePost = ({ setChange, currentUser }) => {
         e.preventDefault();
         const { postBody } = chitterPost;
         const { firstName, secondName, userName } = currentUser;
+        const token = localStorage.getItem("token");
         const post = { firstName: firstName, secondName: secondName, userName: userName, postBody: postBody };
         if (postBody) {
-            const res = await axios.post(`http://localhost:4000/chitterPosts`, post);
+            const res = await axios.post(`http://localhost:4000/chitterPosts`, post, {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                    "Content-Type": "application/json"
+                }
+            });
             setMessage(res.data.message);
             setChange(true);
             setChitterPost({ postBody: `` });

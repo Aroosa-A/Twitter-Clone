@@ -25,7 +25,8 @@ const chitterPostSchema = new mongoose.Schema(
             type: Date,
             default: Date.now,
             required: true
-        }
+        },
+        picturePath: String
     }
 );
 

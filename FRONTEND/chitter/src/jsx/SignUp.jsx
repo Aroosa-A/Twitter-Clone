@@ -71,7 +71,7 @@ const SignUp = () => {
                         <input type="password" placeholder='Password' id='password' name='password' value={user.password} onChange={handleChange} required />
                     </div>
                     {message && <div id='signMessage'><small>{message} </small></div>}
-                    <button type='submit' className='logInButton' >Sign Up</button>
+                    <button type='submit' className='signButton' >Sign Up</button>
                 </form>
             </div>
         </>

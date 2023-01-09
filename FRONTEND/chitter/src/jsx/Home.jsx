@@ -23,7 +23,15 @@ const Home = ({ post, currentUser }) => {
                         {eachPost.firstName} {eachPost.secondName}<br />
                         {eachPost.userName}
                         <div className='middleLine'></div><br />
-                        {eachPost.postDate ? moment(eachPost.postDate).calendar() : <></>}
+                        {eachPost.postDate && moment(eachPost.postDate).calendar()}
+                        {eachPost.picturePath && (
+                            <img
+                                width="75%"
+                                height="auto"
+                                alt='post'
+                                src={`http://localhost:4000/assets/${eachPost.picturePath}`}
+                            />
+                        )}
                     </div>
                 ))
                 }

@@ -56,7 +56,7 @@ const Login = ({ currentUser, setCurrentUser, logIn, logInHandler }) => {
                         <input type="password" placeholder='Password' id='password' name='password' value={user.password} onChange={handleChange} required />
                     </div>
                     {message && <div id="message"><small>{message} </small></div>}
-                    <button type='submit' className='signButton' >LogIn</button>
+                    <button type='submit' className='logInButton' >LogIn</button>
                 </form>
             </div>
         </>

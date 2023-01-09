@@ -185,7 +185,16 @@ I wan't to see some loading animation.
 Presentation Layer=> added material ui react package in front end to add backDrop for animation.
 ```
 
+```
+As a user
+So that I can show others what I am doing
+I wan't to upload a picture in my post.
 
+Presentation Layer=> added *DropZone*, *react-redux* packages in Front-end to store picture path in local machine of business layer.
+Business Layer=> added *Multer*, *Morgan*, *Helmet* packages in Back-end to get the picture and store its path in database.
+Persistance Layer=> added picture path in schema for post so we can store picture path in database.
+
+```
 
 Project Review:
 --------------
@@ -197,3 +206,4 @@ Project Review:
 - I would like to use Bootstrap if i work on it again
 - Also would like to add more functionalities for example option to mention other person in post, sending the notification through emails or replying back to other people posts.
 - Learned about jwt authentication and was able to implement it in this project in updated version of project.
+- Learned how to store picture path in database using Front and Back-end packages and implemented in this project in updated version of project.
